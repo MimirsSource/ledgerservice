@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: ledgerservice
-          image: mimirssource/ledgerservice:1.0
+          imagePullPolicy: Always
+          image: localhost:5000/ledgerservice:1.0
           ports:
             - containerPort: 8080
 ---
